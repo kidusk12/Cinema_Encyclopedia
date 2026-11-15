@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="About the project, data sources and image credits.">
+<title>About | The Cinema Archive</title>
+</head>
+<body>
+<a href="#main">Skip to main content</a>
+<header>
+<p><strong>THE CINEMA ARCHIVE</strong> &mdash; a movie encyclopedia in pure HTML</p>
+<nav aria-label="Main navigation">
+<p><a href="index.html">Home</a> | <a href="movies.html">Movies</a> | <a href="directors.html">Directors</a> | <a href="actors.html">Actors</a> | <a href="genres.html">Genres</a> | <a href="collections.html">Collections</a> | <a href="about.html">About</a></p>
+</nav>
+<hr>
+</header>
+<main id="main">
+<h1>About The Cinema Archive</h1>
+<nav aria-label="On this page"><ul><li><a href="#project">Project</a></li><li><a href="#data">Data sources and verification status</a></li><li><a href="#images">Image credits</a></li><li><a href="#media">Audio and video</a></li><li><a href="#technical">Technical constraints</a></li></ul></nav>
+<section id="project">
+<h2>Project</h2>
+<p>The Cinema Archive is a multi-page movie encyclopedia inspired by IMDb, Letterboxd and The Movie Database. It is deliberately built with HTML only: no CSS, no JavaScript, no frameworks, no backend. Structure comes from semantic elements: headings, tables, lists, forms and expandable <code>details</code> sections.</p>
+<p>It currently contains 15 films, 6 directors and 24 actors.</p>
+</section>
+<section id="data">
+<h2>Data sources and verification status</h2>
+<p>Intended reference sources are Wikidata, Wikipedia, Wikimedia Commons, official studio and film websites, the Academy Awards Database and IMDb (for cross-checking only; no IMDb content or images were copied).</p>
+<p><strong>Important limitation:</strong> the environment in which this archive was generated could not reach Wikidata, Wikipedia or Wikimedia Commons. The facts here (dates, runtimes, credits, awards, production facts) were therefore written from the editor's general knowledge of the public record and were not cross-checked live. Runtimes, release dates for specific territories, and production-company lists are the details most worth re-verifying. Synopses are original wording written for this archive.</p>
+<p>Each movie page lists where to verify its entry, and <code>SOURCES.md</code> collects the same information.</p>
+</section>
+<section id="images">
+<h2>Image credits</h2>
+<p>No images are included. This is intentional:</p>
+<ul>
+<li>The build environment could not download from Wikimedia Commons, so no licence could be verified.</li>
+<li>Official film posters are copyrighted and are generally not freely licensed on Wikimedia Commons, so they would not have been eligible even with access.</li>
+<li>IMDb images were not used, in line with IMDb's terms.</li>
+</ul>
+<p>The folders <code>images/posters</code>, <code>images/directors</code>, <code>images/actors</code> and <code>images/gallery</code> are reserved for future, licence-verified files. Any added image must be recorded in <code>SOURCES.md</code> with its URL, creator and licence.</p>
+</section>
+<section id="media">
+<h2>Audio and video</h2>
+<p>No audio or video is embedded: official trailers and clips are not available under licences that allow redistribution inside a downloadable offline project.</p>
+</section>
+<section id="technical">
+<h2>Technical constraints</h2>
+<ul>
+<li>Pure HTML5; no <code>style</code> attributes or elements, no stylesheets, no scripts, no event-handler attributes.</li>
+<li>All navigation uses ordinary hyperlinks with relative paths, so the site works from a local folder with no internet connection.</li>
+<li>Appearance is controlled entirely by the browser.</li>
+</ul>
+</section>
+</main>
+<footer>
+<hr>
+<nav aria-label="Footer navigation"><p><a href="index.html">Home</a> | <a href="movies.html">Movies</a> | <a href="directors.html">Directors</a> | <a href="actors.html">Actors</a> | <a href="genres.html">Genres</a> | <a href="collections.html">Collections</a> | <a href="about.html">About</a></p></nav>
+<p>The Cinema Archive is a static site written in plain HTML5 with no CSS and no JavaScript. Facts were compiled by hand and should be verified against primary sources before citing; see <a href="about.html">About</a> and <code>SOURCES.md</code>.</p>
+</footer>
+</body>
+</html>
