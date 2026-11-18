@@ -16,9 +16,9 @@
       <a href="index.html">Home</a> |
       <a href="movies.html">Movies</a> |
       <a href="directors.html">Directors</a> |
-      <a href="actors.html">Actors</a> |
+
       <a href="genres.html">Genres</a> |
-      <a href="collections.html">Collections</a> |
+
       <a href="about.html">About</a>
     </p>
   </nav>
@@ -109,12 +109,47 @@
       </tbody>
     </table>
   </section>
+  <section id="watchlist">
+  <h2>Make your watch list</h2>
+  <form action="index.html#watchlist" method="get">
+    <fieldset>
+      <legend>Select the movies you want to watch</legend>
+      <p><label><input type="checkbox" name="movie" value="arrival"> Arrival (2016)</label></p>
+      <p><label><input type="checkbox" name="movie" value="dark-knight"> The Dark Knight (2008)</label></p>
+      <p><label><input type="checkbox" name="movie" value="dune"> Dune (2021)</label></p>
+      <p><label><input type="checkbox" name="movie" value="gone-girl"> Gone Girl (2014)</label></p>
+      <p><label><input type="checkbox" name="movie" value="inglourious-basterds"> Inglourious Basterds (2009)</label></p>
+      <p><label><input type="checkbox" name="movie" value="interstellar"> Interstellar (2014)</label></p>
+      <p><label><input type="checkbox" name="movie" value="oppenheimer"> Oppenheimer (2023)</label></p>
+      <p><label><input type="checkbox" name="movie" value="pulp-fiction"> Pulp Fiction (1994)</label></p>
+      <p><label><input type="checkbox" name="movie" value="shawshank-redemption"> The Shawshank Redemption (1994)</label></p>
+    </fieldset>
+    <p><button type="submit">Save my watch list</button></p>
+  </form>
+</section>
 </main>
-
 <footer>
   <hr>
-  <p><small>Cinematic Encyclopedia</small></p>
+  <table width="100%" cellpadding="20">
+  <tbody>
+    <tr>
+      <td width="33%" align="left" valign="top">
+        <p><a href="contact.html">Recommend a movie</a></p>
+        <p><a href="contact.html">Ask for a physical copy</a></p>
+      </td>
+      <td width="34%" align="center" valign="top">
+        <p><a href="about.html">About</a></p>
+      </td>
+      <td width="33%" align="right" valign="top">
+        <p><a href="contact.html">Contact</a></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+  <hr>
+  <p><small>&copy; 2026 Cinematic Encyclopedia</small></p>
 </footer>
+
 
 </body>
 </html>
